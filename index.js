@@ -4,8 +4,34 @@
 const firstUser = {};
 const secondUser = {};
 
+firstUser.name = "Monica";
+firstUser.gender = "Female";
+firstUser.age = 17;
+firstUser.email = "monica@dingdong.com";
+firstUser.favoriteColor = ['Wheat','Green','Red'];
+firstUser.isHavePet = 'Yes';
+firstUser.education = {
+    name : 'SD 01',
+    city : 'Jakarta',
+    graduate : 2016
+};
+firstUser.favoriteRestaurant = ['Ayam Pak gembus', 'Warteg Bahari', 'Nasi Uduk Ibu Tijah'];
+
+secondUser.name = "Wendy";
+secondUser.gender = "male";
+secondUser.age = 23;
+secondUser.email = "wendy@dingdong.com";
+secondUser.favoriteColor = ['Violet','Gold','Metalic'];
+secondUser.isHavePet = 'No';
+secondUser.education = {
+    name : 'SD 02',
+    city : 'Jakarta',
+    graduate : 2010
+};
+secondUser.favoriteRestaurant = ['Mie Ayam', 'Ramen', 'Ciz n Chick'];
+
 // TODO: Masukkan hasil akhir dari kedua user di sini
-const users = [];
+const users = [firstUser, secondUser];
 
 // ! JANGAN MODIFIKASI LINE DI BAWAH
 function main() {
