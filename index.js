@@ -4,11 +4,23 @@
 const firstUser = {};
 const secondUser = {};
 
+let firstColor = ['Yellow', 'Pink', 'White', 'Purple']
+let secondColor = ['Blue', 'Black', 'Grey']
+
+let firstResto = ['Bento', 'Sushi', 'Pancake', 'Eggy', 'Tempura', 'Bento', 'Eggy', 'Padang', 'Tteok', 'Sushi', 'Sushi']
+let secondResto = ['Tempura', 'Bento', 'Sushi', 'Pancake', 'Padang', 'Katsu', 'Geprek', 'Pancake', 'Eggy']
+
+firstColor  = new Set(firstColor)  
+secondColor = new Set(secondColor)
+firstResto  = new Set(firstResto)  
+secondResto = new Set(secondResto) 
+
+
 firstUser.name = "Monica";
 firstUser.gender = "Female";
 firstUser.age = 17;
 firstUser.email = "monica@dingdong.com";
-firstUser.favoriteColor = ['Yellow', 'Pink', 'White', 'Purple'];
+firstUser.favoriteColor = [...firstColor];
 firstUser.isHavePet = 'Yes';
 firstUser.education = [{
     name: 'SD 01',
@@ -24,13 +36,13 @@ firstUser.education = [{
     name: 'SMA 03',
     city: 'Tangerang'
 }];
-firstUser.favoriteRestaurant = ['Bento', 'Sushi', 'Pancake', 'Eggy', 'Tempura', 'Bento', 'Eggy', 'Padang', 'Tteok', 'Sushi', 'Sushi'];
+firstUser.favoriteRestaurant = [...firstResto];
 
 secondUser.name = "Wendy";
 secondUser.gender = "Male";
 secondUser.age = 23;
 secondUser.email = "wendy@dingdong.com";
-secondUser.favoriteColor = ['Blue', 'Black', 'Grey'];
+secondUser.favoriteColor = [...secondColor];
 secondUser.isHavePet = 'No';
 secondUser.education = [{
     name: 'SD 02',
@@ -48,7 +60,7 @@ secondUser.education = [{
     name: 'Universitas Maju',
     city: 'Tangerang'
 }];
-secondUser.favoriteRestaurant = ['Tempura', 'Bento', 'Sushi', 'Pancake', 'Padang', 'Katsu', 'Geprek', 'Pancake', 'Eggy'];
+secondUser.favoriteRestaurant = [...secondResto];
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [firstUser, secondUser];
